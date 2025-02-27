@@ -1,0 +1,58 @@
+\documentclass[a4paper,12pt,leqno,openbib]{memoir}
+
+% Student-configured constants
+\input{config/thesis-details} 
+
+% PDF info
+\input{config/preamble/pdf-details} 
+
+% Packages
+\input{config/preamble/packages} 
+\input{config/preamble/optional/packages-optional} 
+
+% Structure & layout         
+\input{config/preamble/presentation} % set up structure and layout
+\input{config/hyphenation} % custom hyphenation
+
+
+% New commands
+\input{config/preamble/macros-structure} 
+\input{config/preamble/macros} 
+\input{config/preamble/macros-custom} 
+\input{config/preamble/optional/macros-math} % optional
+\input{config/preamble/optional/typesetting-theorem} % optional
+
+
+
+%======================================
+\begin{document}
+%\frontmatter
+\pagenumbering{gobble}
+
+\chapter*{Presence of General Audience}
+\vspace{3cm} 
+
+%rough template, please modify as needed
+
+To whomsoever it may concern,
+
+I, \utsname, hereby agree to the presence of general audience at the public lecture segment of my PhD dissertation defense. To this end, any necessary means of publicity including my name, dissertation title, date and location of the event may be produced. I welcome the attendance of the event by faculty, students, and other interested individuals. 
+I understand that the subsequent closed examination by the dissertation committee will be conducted separately, as per the established procedures of the university.
+
+
+\vspace{3cm}
+\noindent
+\begin{tikzpicture}[remember picture]
+\node[anchor=south west] at (0,0) {
+};
+\node[anchor=south west] at (0,0) {
+\noindent
+\hspace{-0.88cm}\textsc{Signature: } \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+};
+\node[anchor=south west] at (0,-0.75) {
+\noindent
+{~~~~~~~~~~~~~~~~~~~\utsname} %utsname is defined in config/thesis-details
+};
+\end{tikzpicture}
+
+\end{document}

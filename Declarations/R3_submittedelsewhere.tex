@@ -1,0 +1,59 @@
+\documentclass[a4paper,12pt,leqno,openbib]{memoir}
+
+% Student-configured constants
+\input{config/thesis-details} 
+
+% PDF info
+\input{config/preamble/pdf-details} 
+
+% Packages
+\input{config/preamble/packages} 
+\input{config/preamble/optional/packages-optional} 
+
+% Structure & layout         
+\input{config/preamble/presentation} % set up structure and layout
+\input{config/hyphenation} % custom hyphenation
+
+
+% New commands
+\input{config/preamble/macros-structure} 
+\input{config/preamble/macros} 
+\input{config/preamble/macros-custom} 
+\input{config/preamble/optional/macros-math} % optional
+\input{config/preamble/optional/typesetting-theorem} % optional
+
+
+
+
+%======================================
+\begin{document}
+%\frontmatter
+\pagenumbering{gobble}
+
+\chapter*{Declaration 3: Exclusive Submission}
+\vspace{4cm}
+
+To whomsoever it may concern,
+
+I, \utsname, hereby declare that the dissertation titled ``\utstitle" has not been submitted for evaluation or consideration at any other university. The dissertation is exclusively submitted in fulfillment of requirements to obtain the degree of Doktors der Naturwissenchaften (Dr.~rer.~nat.~) in Computer Science from the \utsfaculty at the \utsuniv. 
+
+
+\noindent
+
+\vspace{4cm}
+\noindent
+\begin{tikzpicture}[remember picture]
+\node[anchor=south west] at (0,0) {
+%\hspace{1.5cm}\includegraphics[width=0.3\textwidth]{assets/Signature.png}
+};
+\node[anchor=south west] at (0,0) {
+\noindent
+\hspace{-0.88cm}\textsc{Signature: } \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+};
+\node[anchor=south west] at (0,-0.75) {
+\noindent
+{~~~~~~~~~~~~~~~~~~~\utsname}
+};
+\end{tikzpicture}
+
+\end{document}

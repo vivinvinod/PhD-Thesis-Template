@@ -1,0 +1,77 @@
+\documentclass[a4paper,12pt,leqno,openbib]{memoir}
+
+% Student-configured constants
+\input{config/thesis-details} 
+
+% PDF info
+\input{config/preamble/pdf-details} 
+
+% Packages
+\input{config/preamble/packages} 
+\input{config/preamble/optional/packages-optional} 
+
+% Structure & layout         
+\input{config/preamble/presentation} % set up structure and layout
+\input{config/hyphenation} % custom hyphenation
+
+
+% New commands
+\input{config/preamble/macros-structure} 
+\input{config/preamble/macros} 
+\input{config/preamble/macros-custom} 
+\input{config/preamble/optional/macros-math} % optional
+\input{config/preamble/optional/typesetting-theorem} % optional
+
+
+
+
+%======================================
+\begin{document}
+%\frontmatter
+\pagenumbering{gobble}
+
+\chapter*{Supervision and Composition of Examination Board}
+
+I, \utsname, hereby acknowledge the supervision by Prof.~Dr.~Peter Zaspel of the University of Wuppertal, for my PhD dissertation titled ``\utstitle". With this submission, I would also like to propose the following composition of the dissertation examination board. 
+%uncomment next line if applicable
+%Taking into account that I wish to be considered for the grade of \textit{summa cum laude}, this proposal also contains external examiners.
+
+\begin{center}
+    \begin{tabular}{|p{3cm}|p{2.75cm}|l|p{2cm}|}
+         \hline
+         NAME & AFFILIATION & CONTACT & POSITION \\
+         \hline\hline
+         
+         Prof.~Dr.~AAA & University of AA & AA@email & Supervisor; Review Chair \\
+         \hline 
+         
+         Prof.~Dr.~BBB & University of BB & BB@email & Internal Reviewer \\
+         \hline
+         
+         Prof.~Dr.~CCC & University of CC & CC@mail & External Reviewer; Collaborator \\
+         \hline
+         
+         Prof.~Dr.~DDD & University of DD & DD@mail & External Reviewer \\
+         \hline
+    \end{tabular}
+\end{center}
+
+I understand the final decision of the examination board will be made based on the regulations of the University of Wuppertal. 
+
+
+\vspace{2cm}
+\noindent
+\begin{tikzpicture}[remember picture]
+\node[anchor=south west] at (0,0) {
+};
+\node[anchor=south west] at (0,0) {
+\noindent
+\hspace{-0.88cm}\textsc{Signature: } \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+};
+\node[anchor=south west] at (0,-0.75) {
+\noindent
+{~~~~~~~~~~~~~~~~~~~\utsname}
+};
+\end{tikzpicture}
+
+\end{document}
